@@ -1,5 +1,47 @@
-images/
-labels/
+# ==========================================
+# ALPR Hackathon Project - .gitignore
+# ==========================================
+
+# 1. Frontend (React/Vite)
+frontend/node_modules/
+frontend/dist/
+frontend/build/
+frontend/.eslintcache
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 2. Backend (Python/FastAPI)
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+
+# 3. Machine Learning & YOLO Artifacts
+images/
+labels/
+dataset.yaml
+classes.txt
 yolov8n.pt
+last.pt
+
+# Ignore the heavy training runs folder entirely
+runs/
+
+# (Exception: We force Git to still track your winning weights just in case 
+# you haven't moved them out of the runs folder yet)
+!runs/detect/ALPR_Project/plate_detector/weights/best.pt
+
+# 4. OS Generated Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
