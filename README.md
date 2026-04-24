@@ -40,10 +40,10 @@ git clone https://github.com/samarthshukla20/CodeNakshatra-AlprAiModel.git
 ```
 
 ## 2. Start the Backend API
-Ensure you have Python 3.8+ installed. Navigate to the ```backend``` folder, install the required packages, and start the server:
+Ensure you have Python 3.8+ installed. Install the required packages, navigate to the ```backend``` folder, and start the server:
 ```bash
-cd backend
 pip install -r requirements.txt
+cd backend
 uvicorn main:app --reload
 ```
 
