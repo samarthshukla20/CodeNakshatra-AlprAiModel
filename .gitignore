@@ -1,0 +1,5 @@
+images/
+labels/
+__pycache__/
+*.pyc
+yolov8n.pt

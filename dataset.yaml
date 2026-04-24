@@ -1,0 +1,8 @@
+train: C:\Users\samar\Documents\num-plt-detection-ml-model\dataset\images\train
+val: C:\Users\samar\Documents\num-plt-detection-ml-model\dataset\images\val
+
+# Number of classes
+nc: 1
+
+# Class names
+names: ['license_plate']
