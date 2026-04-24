@@ -33,7 +33,13 @@ alpr-ml-model/
 ## -- Prerequisites --
 Ensure you have Python 3.8+ installed. If you have an NVIDIA GPU, it is highly recommended to install the CUDA-enabled version of PyTorch for significantly faster processing.
 
-## 1. Start the Backend API
+## 1. Install the repository
+Install the repository in your desired location by using the following git clone command:
+```bash
+git clone https://github.com/samarthshukla20/CodeNakshatra-AlprAiModel.git
+```
+
+## 2. Start the Backend API
 Ensure you have Python 3.8+ installed. Navigate to the ```backend``` folder, install the required packages, and start the server:
 ```bash
 cd backend
@@ -41,7 +47,7 @@ pip install -r requirements.txt
 uvicorn main:app --reload
 ```
 
-## 2. Launch the Frontend UI
+## 3. Launch the Frontend UI
 Open a new terminal window, navigate to the ```frontend``` folder, install the Node packages, and start the Vite development server:
 ```bash
 cd frontend
@@ -49,5 +55,5 @@ npm install
 npm run dev
 ```
 
-## 3. Test the Pipeline
+## 4. Test the Pipeline
 Open the frontend URL in your browser. Scroll down to the Predictor section and drag and drop any vehicle image (feel free to use the samples provided in the ```test-img/``` folder) into the upload zone to see the real-time YOLOv8 detection and EasyOCR extraction!
